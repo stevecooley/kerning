@@ -1,0 +1,271 @@
+
+@font-face {
+    font-family: 'cooleyshapesquareendsregular';
+    src: url('https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooleyshapesemiformal';
+    src: url('https://2ttf.com/webfont/LC6k3RADFA6/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooleyshapesquareendsregularnormalizedwidth';
+    src: url('https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cooley shape informal';
+    src: url('./files/Cooleyshapeinformal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooleyshapes';
+    src: url('https://2ttf.com/webfont/2Y1pWHUySSg/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooleytrampoline';
+    src: url('https://2ttf.com/webfont/H0sclMuwL2Y/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooleycatface';
+    src: url('https://2ttf.com/webfont/IVXDjFMrdQw/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley catface informal';
+    src: url('https://2ttf.com/webfont/Jndshg6RtIi/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley unstruktured';
+    src: url('https://2ttf.com/webfont/Aor4JCozEOg/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley revival';
+    src: url('https://2ttf.com/webfont/8UwzXEt8vQa/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley moar cats';
+    src: url('https://2ttf.com/webfont/SH3UvTMR/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley free backwards font';
+    src: url('https://2ttf.com/webfont/T2o5sC45/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley middle airplane seat';
+    src: url('https://2ttf.com/webfont/Vp4maQl8/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley ananas wacky';
+    src: url('https://2ttf.com/webfont/PaM4icff/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley masking tape block';
+    src: url('https://2ttf.com/webfont/ZJ8MQrlU/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley questionable sans';
+    src: url('https://2ttf.com/webfont/M7AcbTKB/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley inverted';
+    src: url('https://2ttf.com/webfont/dYBCdZet/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley robot arms';
+    src: url('https://2ttf.com/webfont/Offsosp1/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley chunk';
+    src: url('https://2ttf.com/webfont/VzIgBSZN/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley urban scrawl';
+    src: url('https://2ttf.com/webfont/YxZbQTxX/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley draftsmanship';
+    src: url('https://2ttf.com/webfont/cHZhXK3K/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley slowball';
+    src: url('https://2ttf.com/webfont/UXvcscNC/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley greeting card serif';
+    src: url('https://2ttf.com/webfont/PHTFSxpW/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley greeting card sans';
+    src: url('https://2ttf.com/webfont/QaGnHdxY/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley inconsistent double';
+    src: url('https://2ttf.com/webfont/bGU3UYgG/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley bloop';
+    src: url('./files/cooleybloop.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley cats';
+    src: url('https://2ttf.com/webfont/WilTfliz/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley casual';
+    src: url('https://2ttf.com/webfont/VRbITUwo/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley caltrain';
+    src: url('./files/caltrain.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley robotfaces';
+    src: url('./files/Cooley_robotfaces01.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley cats02';
+    src: url('./files/Cooleycats02.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley Galaxina';
+    src: url('./files/Galaxina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley KboyFont';
+    src: url('./files/KboyFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley Magneato';
+    src: url('./files/Magneato.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley netlabel square ends';
+    src: url('./files/netlabel_square_ends.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley Redneck Astronaut';
+    src: url('./files/Redneck_Astronaut.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley stevecooley';
+    src: url('./files/Stevecooley.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley Tamestyle';
+    src: url('./files/Tamestyle.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley whitespace_is_evil';
+    src: url('./files/whitespace_is_evil.ttf') format('truetype');
+}
+
+#controlPanel {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+#controlPanel a {
+    text-decoration: none;
+}
+
+#controlPanel h1 {
+    font-family: 'Cooley shape informal';
+    font-size: 0.55em;
+    white-space: nowrap;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#sharelink {
+    margin-top: 10px;
+}
+
+#toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    font-family: cooley Draftsmanship;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#textContainer {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    margin-top: -1em;
+}
+
+.random-color {
+    animation: color 3s infinite;
+}
+
+@keyframes color {
+    0% {
+        color: #FF0000;
+    }
+    25% {
+        color: #00FF00;
+    }
+    50% {
+        color: #0000FF;
+    }
+    75% {
+        color: #FF00FF;
+    }
+    100% {
+        color: #FFFF00;
+    }
+}
