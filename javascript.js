@@ -8,8 +8,16 @@ function changeFontSize() {
     let newSize = document.getElementById('fontSizeSlider').value;
     document.getElementById('textContainer').style.fontSize = newSize + 'px';
     document.getElementById('fontSizeValue').textContent = newSize;
+
+    // Calculate the new line height based on the font size
+    let lineHeight = Math.round(newSize * 1.1);
+    document.getElementById('lineHeightSlider').value = lineHeight;
+    document.getElementById('lineHeightValue').textContent = lineHeight;
+    document.getElementById('textContainer').style.lineHeight = lineHeight + 'px';
+
     updateUrl();
 }
+
 
 function changeLetterSpacing() {
     let newSpacing = document.getElementById('letterSpacingSlider').value;
@@ -81,17 +89,24 @@ function updateColorScheme() {
 }
 
 function updateUrl() {
-    let params = new URLSearchParams();
-    params.set('fontSize', document.getElementById('fontSizeSlider').value);
-    params.set('letterSpacing', document.getElementById('letterSpacingSlider').value);
-    params.set('lineHeight', document.getElementById('lineHeightSlider').value);
-    params.set('font', encodeURIComponent(document.getElementById('fontSelector').value));
+    if (typeof updateUrl.timeoutId !== 'undefined') {
+        clearTimeout(updateUrl.timeoutId);
+    }
 
-    let updatedUrl = window.location.origin + window.location.pathname + '?' + params.toString();
-    window.history.replaceState({}, '', updatedUrl);
-    document.getElementById('shareLink').href = updatedUrl;
-    document.getElementById('shareLink').textContent = "Share this link";
+    updateUrl.timeoutId = setTimeout(function() {
+        let params = new URLSearchParams();
+        params.set('fontSize', document.getElementById('fontSizeSlider').value);
+        params.set('letterSpacing', document.getElementById('letterSpacingSlider').value);
+        params.set('lineHeight', document.getElementById('lineHeightSlider').value);
+        params.set('font', encodeURIComponent(document.getElementById('fontSelector').value));
+
+        let updatedUrl = window.location.origin + window.location.pathname + '?' + params.toString();
+        window.history.replaceState({}, '', updatedUrl);
+        document.getElementById('shareLink').href = updatedUrl;
+        document.getElementById('shareLink').textContent = 'Share this link';
+    }, 100);
 }
+
 
 function loadSettingsFromUrl() {
     let params = new URLSearchParams(window.location.search);
@@ -118,6 +133,18 @@ function loadSettingsFromUrl() {
         document.getElementById('fontSelector').value = decodeURIComponent(params.get('font'));
         changeFont();
     }
+}
+
+function resetSettings() {
+    document.getElementById('fontSizeSlider').value = 16;
+    document.getElementById('letterSpacingSlider').value = 0;
+    document.getElementById('lineHeightSlider').value = 16;
+    document.getElementById('fontSelector').value = 'cooleytrampoline';
+    changeFontSize();
+    changeLetterSpacing();
+    changeLineHeight();
+    changeFont();
+    updateUrl();
 }
 
 window.onload = function() {

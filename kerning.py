@@ -33,8 +33,6 @@ def to_html(text):
         ]
     )
 
-
-
     js = """
 <script>
 <!-- I'm trying :( -->
@@ -52,7 +50,18 @@ def to_html(text):
 
     css_link = '<link rel="stylesheet" href="styles.css">'
     js_link = '<script src="javascript.js"></script><script src="events.js"></script>'
-   
+    # Check if it's a mobile device
+    is_mobile = """
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        if (isMobileDevice()) {
+            document.getElementsByTagName("html")[0].classList.add("is-mobile");
+        }
+    </script>
+    """
     return f"""<!DOCTYPE html>
 <html>
 <head>
@@ -62,6 +71,7 @@ def to_html(text):
 {css_link}
 {js}
 {js_link}
+{is_mobile}
 </head>
 <body>
 <div id="toggleButton" onclick="toggleControlPanel()">Toggle Controls</div>
@@ -76,20 +86,20 @@ def to_html(text):
         	</a>
     	</h1>    
     </div>
+
     <div>
         <label for="fontSizeSlider">Font size: </label>
-        <input type="range" id="fontSizeSlider" min="6" max="300" value="16" oninput="changeFontSize()" onchange="updateUrl()">
+        <input type="range" id="fontSizeSlider" min="10" max="100" value="16" oninput="changeFontSize()" onchange="updateUrl()">
         <span id="fontSizeValue">16</span>
-
     </div>
     <div>
 		<label for="letterSpacingSlider">Letter spacing: </label>
-        <input type="range" id="letterSpacingSlider" min="-50" max="100" value="0" oninput="changeLetterSpacing()" onchange="updateUrl()">
+        <input type="range" id="letterSpacingSlider" min="-15" max="20" value="0" oninput="changeLetterSpacing()" onchange="updateUrl()">
         <span id="letterSpacingValue">0</span>
     </div>
     <div>
         <label for="lineSpacingSlider">Line spacing: </label>
-        <input type="range" id="lineHeightSlider" min="-10" max="300" value="16" oninput="changeLineHeight()" onchange="updateUrl()">
+        <input type="range" id="lineHeightSlider" min="-5" max="100" value="16" oninput="changeLineHeight()" onchange="updateUrl()">
         <span id="lineHeightValue">16</span>
     </div>
     <div>
@@ -98,6 +108,8 @@ def to_html(text):
     </div>
     <div id="sharelink">
     	<a id="shareLink" href="" target="_blank" title="">Share</a>
+    	<span class="spacer"></span>
+    	<button id="resetButton" onclick="resetSettings()">Reset</button>
 	</div>
 </div>
 <div id="textContainer" style="font-family: cooleyshapesquareendsregular; font-size: 16px;">

@@ -70,25 +70,65 @@ body {
     animation: color 3s infinite;
 }
 
-@keyframes color {
-    0% {
-        color: #FF0000;
+.is-mobile #controlPanel {
+    display: block;
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+.is-mobile #toggleButton {
+    display: block;
+}
+
+.is-mobile select,
+.is-mobile input[type="range"] {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.is-mobile select {
+    height: 60px;
+}
+
+.is-mobile input[type="range"] {
+    height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    #controlPanel {
+        padding: 10px;
     }
-    25% {
-        color: #00FF00;
-    }
-    50% {
-        color: #0000FF;
-    }
-    75% {
-        color: #FF00FF;
-    }
-    100% {
-        color: #FFFF00;
+
+    .is-mobile select,
+    .is-mobile input[type="range"] {
+        padding: 10px;
     }
 }
-"""
 
+#resetButton {
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.is-mobile .spacer {
+  margin-left: 20px; /* Adjust the value as needed */
+}
+
+.spacer {
+  margin-left: 100px; /* Adjust the value as needed */
+}
+
+"""
     return css
 
 def save_css(css):
