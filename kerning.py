@@ -7,6 +7,41 @@ from fonts import fonts
 from pangrams import pangrams
 # import urllib.parse
 
+pangram_anchors = [
+    {
+        "label": "Uppercase",
+        "anchor": "UPPERCASE",
+    },
+    {
+        "label": "Lowercase",
+        "anchor": "lowercase",
+    },
+    {
+        "label": "Uppercase Words",
+        "anchor": "Uppercase-Words",
+    },
+    {
+        "label": "Mixed Case Words",
+        "anchor": "mIxEd-CaSe-WoRdS",
+    },
+    {
+        "label": "Character Table",
+        "anchor": "Character-Table",
+    },
+    {
+        "label": "Lowercase Kerning",
+        "anchor": "lowercase-kerning",
+    },
+    {
+        "label": "Uppercase Kerning",
+        "anchor": "UPPERCASE-kerning",
+    },
+    {
+        "label": "Mixed Case Kerning",
+        "anchor": "mIxEd-CaSe-kerning",
+    }
+]
+
 
 def read_config(config_file):
     config = configparser.ConfigParser()
@@ -21,17 +56,7 @@ def generate_text(length):
 
 
 def to_html(text):
-    css = "\n".join(
-        [
-            f"""
-        @font-face {{
-            font-family: '{name}';
-            src: url('{url}') format('truetype');
-        }}
-        """
-            for name, url in fonts
-        ]
-    )
+
 
     js = """
 <script>
@@ -61,13 +86,28 @@ def to_html(text):
             document.getElementsByTagName("html")[0].classList.add("is-mobile");
         }
     </script>
-    """
+"""
+
+        # Generate the text links
+    links = []
+    for item in pangram_anchors:
+        anchor = item["anchor"]
+        label = item["label"]
+        link = f'<a href="#{anchor}">{label}</a> <br> '
+        links.append(link)
+    
+    # Print the links
+    anchor_tags = "Jump to: <br>"
+    for link in links:
+        anchor_tags += link
+        anchor_tags += "\n"
+        
     return f"""<!DOCTYPE html>
+    <meta charset="UTF-8">
 <html>
 <head>
-<style>
-{css}
-</style>
+
+
 {css_link}
 {js}
 {js_link}
@@ -111,6 +151,9 @@ def to_html(text):
     	<span class="spacer"></span>
     	<button id="resetButton" onclick="resetSettings()">Reset</button>
 	</div>
+	<div>
+	    {anchor_tags}
+	</div>
 </div>
 <div id="textContainer" style="font-family: cooleyshapesquareendsregular; font-size: 16px;">
 {text}
@@ -119,20 +162,17 @@ def to_html(text):
 </html>
 """
 
-
 def save_html(text):
     file_name = "portfolio.html"
     with open(file_name, "w") as file:
         file.write(text)
     print(f"HTML saved to {file_name}.")
 
-
 def upload_to_ftp(local_file, ftp_server, ftp_user, ftp_password, remote_path):
     with ftplib.FTP(ftp_server, ftp_user, ftp_password) as ftp:
         with open(local_file, "rb") as file:
             ftp.storbinary(f"STOR {remote_path}", file)
     print(f"File uploaded to {ftp_server}/{remote_path}.")
-
 
 def main():
 
@@ -157,7 +197,6 @@ def main():
 
     remote_path = os.path.join(remote_dir, "javascript.js")
     upload_to_ftp("javascript.js", ftp_server, ftp_user, ftp_password, remote_path)
-
 
 if __name__ == "__main__":
     main()

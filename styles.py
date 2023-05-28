@@ -58,6 +58,41 @@ body {
     margin: 0;
 }
 
+#characterTable {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+#characterTable td {
+    border: 1px solid #ddd;
+}
+
+
+.staticfontright {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    padding: 10px;
+}
+
+.staticfontleft {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+}
+
+#characterTable td.activefont {
+    font-family: inherit;
+    text-align: center;
+    padding: 20px;
+    width: 25%;
+}
+
 #textContainer {
     padding: 20px;
     background-color: #ffffff;
@@ -80,13 +115,13 @@ body {
     display: block;
 }
 
-.is-mobile select,
-.is-mobile input[type="range"] {
-    width: 100%;
+select,
+input[type="range"] {
+    width: 85%;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     margin-bottom: 10px;
     font-size: 16px;
     color: #000000;
@@ -97,7 +132,7 @@ body {
 }
 
 .is-mobile input[type="range"] {
-    height: 40px;
+    height: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -107,7 +142,7 @@ body {
 
     .is-mobile select,
     .is-mobile input[type="range"] {
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -127,6 +162,7 @@ body {
 .spacer {
   margin-left: 100px; /* Adjust the value as needed */
 }
+
 
 """
     return css

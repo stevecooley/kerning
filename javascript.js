@@ -18,6 +18,12 @@ function changeFontSize() {
     updateUrl();
 }
 
+function handleAnchorClick(event) {
+  event.preventDefault();
+  const anchorTag = event.target.dataset.anchor;
+  selectedAnchor = anchorTag;
+  updateUrl();
+}
 
 function changeLetterSpacing() {
     let newSpacing = document.getElementById('letterSpacingSlider').value;
@@ -93,12 +99,15 @@ function updateUrl() {
         clearTimeout(updateUrl.timeoutId);
     }
 
+	let selectedAnchor = null;
+
     updateUrl.timeoutId = setTimeout(function() {
         let params = new URLSearchParams();
         params.set('fontSize', document.getElementById('fontSizeSlider').value);
         params.set('letterSpacing', document.getElementById('letterSpacingSlider').value);
         params.set('lineHeight', document.getElementById('lineHeightSlider').value);
         params.set('font', encodeURIComponent(document.getElementById('fontSelector').value));
+        params.set('anchor', selectedAnchor || ''); // Include the selected anchor tag
 
         let updatedUrl = window.location.origin + window.location.pathname + '?' + params.toString();
         window.history.replaceState({}, '', updatedUrl);
@@ -139,7 +148,7 @@ function resetSettings() {
     document.getElementById('fontSizeSlider').value = 16;
     document.getElementById('letterSpacingSlider').value = 0;
     document.getElementById('lineHeightSlider').value = 16;
-    document.getElementById('fontSelector').value = 'cooleytrampoline';
+    // document.getElementById('fontSelector').value = 'cooleytrampoline';
     changeFontSize();
     changeLetterSpacing();
     changeLineHeight();
