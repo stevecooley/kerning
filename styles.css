@@ -1,127 +1,7 @@
 
 @font-face {
-    font-family: 'cooleyshapesquareendsregular';
-    src: url('https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooleyshapesemiformal';
-    src: url('https://2ttf.com/webfont/LC6k3RADFA6/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooleyshapesquareendsregularnormalizedwidth';
-    src: url('https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Cooley shape informal';
-    src: url('./files/Cooleyshapeinformal.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooleyshapes';
-    src: url('https://2ttf.com/webfont/2Y1pWHUySSg/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooleytrampoline';
-    src: url('https://2ttf.com/webfont/H0sclMuwL2Y/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooleycatface';
-    src: url('https://2ttf.com/webfont/IVXDjFMrdQw/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley catface informal';
-    src: url('https://2ttf.com/webfont/Jndshg6RtIi/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley unstruktured';
-    src: url('https://2ttf.com/webfont/Aor4JCozEOg/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley revival';
-    src: url('https://2ttf.com/webfont/8UwzXEt8vQa/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley moar cats';
-    src: url('https://2ttf.com/webfont/SH3UvTMR/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley free backwards font';
-    src: url('https://2ttf.com/webfont/T2o5sC45/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley middle airplane seat';
-    src: url('https://2ttf.com/webfont/Vp4maQl8/webfont.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'cooley ananas wacky';
     src: url('https://2ttf.com/webfont/PaM4icff/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley masking tape block';
-    src: url('https://2ttf.com/webfont/ZJ8MQrlU/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley questionable sans';
-    src: url('https://2ttf.com/webfont/M7AcbTKB/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley inverted';
-    src: url('https://2ttf.com/webfont/dYBCdZet/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley robot arms';
-    src: url('https://2ttf.com/webfont/Offsosp1/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley chunk';
-    src: url('https://2ttf.com/webfont/VzIgBSZN/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley urban scrawl';
-    src: url('https://2ttf.com/webfont/YxZbQTxX/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley draftsmanship';
-    src: url('https://2ttf.com/webfont/cHZhXK3K/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley slowball';
-    src: url('https://2ttf.com/webfont/UXvcscNC/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley greeting card serif';
-    src: url('https://2ttf.com/webfont/PHTFSxpW/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley greeting card sans';
-    src: url('https://2ttf.com/webfont/QaGnHdxY/webfont.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'cooley inconsistent double';
-    src: url('https://2ttf.com/webfont/bGU3UYgG/webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -130,8 +10,8 @@
 }
 
 @font-face {
-    font-family: 'cooley cats';
-    src: url('https://2ttf.com/webfont/WilTfliz/webfont.ttf') format('truetype');
+    font-family: 'cooley caltrain';
+    src: url('./files/caltrain.ttf') format('truetype');
 }
 
 @font-face {
@@ -140,23 +20,68 @@
 }
 
 @font-face {
-    font-family: 'cooley caltrain';
-    src: url('./files/caltrain.ttf') format('truetype');
+    font-family: 'cooley cats';
+    src: url('https://2ttf.com/webfont/WilTfliz/webfont.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'cooley robotfaces';
-    src: url('./files/Cooley_robotfaces01.ttf') format('truetype');
+    font-family: 'cooley cats MOAR';
+    src: url('https://2ttf.com/webfont/SH3UvTMR/webfont.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'cooley cats02';
+    font-family: 'cooley cats two';
     src: url('./files/Cooleycats02.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley catface informal';
+    src: url('https://2ttf.com/webfont/Jndshg6RtIi/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley catface';
+    src: url('https://2ttf.com/webfont/IVXDjFMrdQw/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley chunk';
+    src: url('https://2ttf.com/webfont/VzIgBSZN/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley draftsmanship';
+    src: url('https://2ttf.com/webfont/cHZhXK3K/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley free backwards font';
+    src: url('https://2ttf.com/webfont/T2o5sC45/webfont.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'cooley Galaxina';
     src: url('./files/Galaxina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley greeting card sans';
+    src: url('https://2ttf.com/webfont/QaGnHdxY/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley greeting card serif';
+    src: url('https://2ttf.com/webfont/PHTFSxpW/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley inconsistent double';
+    src: url('https://2ttf.com/webfont/bGU3UYgG/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley inverted';
+    src: url('https://2ttf.com/webfont/dYBCdZet/webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -170,13 +95,78 @@
 }
 
 @font-face {
+    font-family: 'cooley masking tape block';
+    src: url('https://2ttf.com/webfont/ZJ8MQrlU/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley middle airplane seat';
+    src: url('https://2ttf.com/webfont/Vp4maQl8/webfont.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'cooley netlabel square ends';
     src: url('./files/netlabel_square_ends.ttf') format('truetype');
 }
 
 @font-face {
+    font-family: 'cooley pew pew pew';
+    src: url('./files/pewpewpew.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley questionable sans';
+    src: url('https://2ttf.com/webfont/M7AcbTKB/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley RAWR';
+    src: url('./files/Rawr.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'cooley Redneck Astronaut';
     src: url('./files/Redneck_Astronaut.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley revival';
+    src: url('https://2ttf.com/webfont/8UwzXEt8vQa/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley robot arms';
+    src: url('https://2ttf.com/webfont/Offsosp1/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley robotfaces';
+    src: url('./files/Cooley_robotfaces01.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley shape informal';
+    src: url('./files/Cooleyshapeinformal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley shapes';
+    src: url('https://2ttf.com/webfont/2Y1pWHUySSg/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley shapesemiformal';
+    src: url('https://2ttf.com/webfont/LC6k3RADFA6/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley shapesquareendsregular';
+    src: url('https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley slowball';
+    src: url('https://2ttf.com/webfont/UXvcscNC/webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -187,6 +177,21 @@
 @font-face {
     font-family: 'cooley Tamestyle';
     src: url('./files/Tamestyle.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley trampoline';
+    src: url('https://2ttf.com/webfont/H0sclMuwL2Y/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley unstruktured';
+    src: url('https://2ttf.com/webfont/Aor4JCozEOg/webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cooley urban scrawl';
+    src: url('https://2ttf.com/webfont/YxZbQTxX/webfont.ttf') format('truetype');
 }
 
 @font-face {
@@ -240,6 +245,41 @@ body {
     margin: 0;
 }
 
+#characterTable {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+#characterTable td {
+    border: 1px solid #ddd;
+}
+
+
+.staticfontright {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+    padding: 10px;
+}
+
+.staticfontleft {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+}
+
+#characterTable td.activefont {
+    font-family: inherit;
+    text-align: center;
+    padding: 20px;
+    width: 25%;
+}
+
 #textContainer {
     padding: 20px;
     background-color: #ffffff;
@@ -262,13 +302,13 @@ body {
     display: block;
 }
 
-.is-mobile select,
-.is-mobile input[type="range"] {
-    width: 100%;
+select,
+input[type="range"] {
+    width: 85%;
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     margin-bottom: 10px;
     font-size: 16px;
     color: #000000;
@@ -279,7 +319,7 @@ body {
 }
 
 .is-mobile input[type="range"] {
-    height: 40px;
+    height: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,7 +329,7 @@ body {
 
     .is-mobile select,
     .is-mobile input[type="range"] {
-        padding: 10px;
+        padding: 5px;
     }
 }
 
@@ -309,4 +349,24 @@ body {
 .spacer {
   margin-left: 100px; /* Adjust the value as needed */
 }
+
+#anchorButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.anchor-button {
+    margin: 0 5px;
+    padding: 5px 5px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.anchor-button:hover {
+    background-color: #e0e0e0;
+}
+
 

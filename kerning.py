@@ -17,27 +17,27 @@ pangram_anchors = [
         "anchor": "lowercase",
     },
     {
-        "label": "Uppercase Words",
+        "label": "UC Words",
         "anchor": "Uppercase-Words",
     },
     {
-        "label": "Mixed Case Words",
+        "label": "Mixed case",
         "anchor": "mIxEd-CaSe-WoRdS",
     },
     {
-        "label": "Character Table",
+        "label": "CharTable",
         "anchor": "Character-Table",
     },
     {
-        "label": "Lowercase Kerning",
+        "label": "LC Kerning",
         "anchor": "lowercase-kerning",
     },
     {
-        "label": "Uppercase Kerning",
+        "label": "UC Kerning",
         "anchor": "UPPERCASE-kerning",
     },
     {
-        "label": "Mixed Case Kerning",
+        "label": "MC Kerning",
         "anchor": "mIxEd-CaSe-kerning",
     }
 ]
@@ -74,7 +74,7 @@ def to_html(text):
     )
 
     css_link = '<link rel="stylesheet" href="styles.css">'
-    js_link = '<script src="javascript.js"></script><script src="events.js"></script>'
+    js_link = '<script src="javascript.js">\n</script><script src="events.js"></script>'
     # Check if it's a mobile device
     is_mobile = """
     <script>
@@ -93,7 +93,8 @@ def to_html(text):
     for item in pangram_anchors:
         anchor = item["anchor"]
         label = item["label"]
-        link = f'<a href="#{anchor}">{label}</a> <br> '
+        link = f'<a href="#{anchor}" class="anchor-link"><button class="anchor-button" data-anchor="{anchor}">{label}</button></a> '
+
         links.append(link)
     
     # Print the links
@@ -126,29 +127,26 @@ def to_html(text):
         	</a>
     	</h1>    
     </div>
-
     <div>
-        <label for="fontSizeSlider">Font size: </label>
+        <label for="fontSelector">Font: </label><br>
+        {font_selector}
+    </div>
+    <div>
+        <label for="fontSizeSlider">Font size: </label><br>
         <input type="range" id="fontSizeSlider" min="10" max="100" value="16" oninput="changeFontSize()" onchange="updateUrl()">
         <span id="fontSizeValue">16</span>
     </div>
     <div>
-		<label for="letterSpacingSlider">Letter spacing: </label>
+		<label for="letterSpacingSlider">Letter spacing: </label><br>
         <input type="range" id="letterSpacingSlider" min="-15" max="20" value="0" oninput="changeLetterSpacing()" onchange="updateUrl()">
         <span id="letterSpacingValue">0</span>
     </div>
     <div>
-        <label for="lineSpacingSlider">Line spacing: </label>
+        <label for="lineSpacingSlider">Line spacing: </label><br>
         <input type="range" id="lineHeightSlider" min="-5" max="100" value="16" oninput="changeLineHeight()" onchange="updateUrl()">
         <span id="lineHeightValue">16</span>
     </div>
     <div>
-        <label for="fontSelector">Font: </label>
-        {font_selector}
-    </div>
-    <div id="sharelink">
-    	<a id="shareLink" href="" target="_blank" title="">Share</a>
-    	<span class="spacer"></span>
     	<button id="resetButton" onclick="resetSettings()">Reset</button>
 	</div>
 	<div>

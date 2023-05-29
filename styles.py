@@ -163,6 +163,25 @@ input[type="range"] {
   margin-left: 100px; /* Adjust the value as needed */
 }
 
+#anchorButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.anchor-button {
+    margin: 0 5px;
+    padding: 5px 5px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.anchor-button:hover {
+    background-color: #e0e0e0;
+}
+
 
 """
     return css

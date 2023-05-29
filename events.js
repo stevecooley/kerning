@@ -61,3 +61,14 @@ function updateUrlWithAnchor(anchorTag) {
         document.getElementById('shareLink').textContent = 'Share this link';
     }, 100);
 }
+
+// Add event listeners to the anchor buttons
+const anchorButtons = document.getElementsByClassName('anchor-button');
+for (let i = 0; i < anchorButtons.length; i++) {
+    anchorButtons[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        const anchorTag = event.target.dataset.anchor;
+        selectedAnchor = anchorTag;
+        updateUrlWithAnchor(anchorTag);
+    });
+}

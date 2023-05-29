@@ -32,7 +32,6 @@ fonts = [
 		("cooley shapes", "https://2ttf.com/webfont/2Y1pWHUySSg/webfont.ttf"),
 		("cooley shapesemiformal", "https://2ttf.com/webfont/LC6k3RADFA6/webfont.ttf"),
 		("cooley shapesquareendsregular", "https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf"),
-		("cooley shapesquareendsregularnormalizedwidth", "https://2ttf.com/webfont/3uPTAlcKj2s/webfont.ttf"),
 		("cooley slowball", "https://2ttf.com/webfont/UXvcscNC/webfont.ttf"),
 		("cooley stevecooley", "./files/Stevecooley.ttf"),
 		("cooley Tamestyle", "./files/Tamestyle.ttf"),

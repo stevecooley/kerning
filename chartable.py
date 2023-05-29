@@ -13,9 +13,9 @@ def generate_unicode_table(start, end):
         name = unicodedata.name(char, 'Unknown')
         code = f'U+{code_point:04X}'
         table += f'  <tr>\n'
-        table += f'    <td class="staticfontright">{code}</td>\n'
+        table += f'    <td class="staticfontright"><a href="https://unicodeplus.com/{code}">{code}</a></td>\n'
         table += f'    <td class="activefont">{char}</td>\n'
-        table += f'    <td class="staticfontleft">{name}</td>\n'
+        table += f'    <td class="staticfontleft"><a href="https://en.wikipedia.org/wiki/{code}">{name}</a></td>\n'
         table += f'  </tr>\n'
 
     table += '</table>'
